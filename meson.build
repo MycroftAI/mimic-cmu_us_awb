@@ -4,23 +4,23 @@ voice_name = 'cmu_us_awb'
 build_plugin = get_option('plugin')
 
 sources = [
-  'cmu_us_awb.c',
-  'cmu_us_awb_cg.c',
-  'cmu_us_awb_cg_durmodel.c',
-  'cmu_us_awb_cg_durmodel.h',
-  'cmu_us_awb_cg_f0_trees.c',
-  'cmu_us_awb_cg_f0_trees.h',
-  'cmu_us_awb_cg_phonestate.c',
-  'cmu_us_awb_cg_single_mcep_trees.c',
-  'cmu_us_awb_cg_single_mcep_trees.h',
-  'cmu_us_awb_cg_single_params.c',
-  'cmu_us_awb_plugin.c',
-  'cmu_us_awb_spamf0_accent.c',
-  'cmu_us_awb_spamf0_accent.h',
-  'cmu_us_awb_spamf0_accent_params.c',
-  'cmu_us_awb_spamf0_phrase.c',
-  'cmu_us_awb_spamf0_phrase.h',
-  'voxdefs.h'
+  'src/cmu_us_awb.c',
+  'src/cmu_us_awb_cg.c',
+  'src/cmu_us_awb_cg_durmodel.c',
+  'src/cmu_us_awb_cg_durmodel.h',
+  'src/cmu_us_awb_cg_f0_trees.c',
+  'src/cmu_us_awb_cg_f0_trees.h',
+  'src/cmu_us_awb_cg_phonestate.c',
+  'src/cmu_us_awb_cg_single_mcep_trees.c',
+  'src/cmu_us_awb_cg_single_mcep_trees.h',
+  'src/cmu_us_awb_cg_single_params.c',
+  'src/cmu_us_awb_plugin.c',
+  'src/cmu_us_awb_spamf0_accent.c',
+  'src/cmu_us_awb_spamf0_accent.h',
+  'src/cmu_us_awb_spamf0_accent_params.c',
+  'src/cmu_us_awb_spamf0_phrase.c',
+  'src/cmu_us_awb_spamf0_phrase.h',
+  'src/voxdefs.h'
 ]
 includes = [include_directories('include'), include_directories('.')]
 
