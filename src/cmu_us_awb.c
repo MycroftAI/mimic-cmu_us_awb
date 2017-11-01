@@ -95,12 +95,12 @@ void unregister_cmu_us_awb(cst_voice *vox)
     cmu_us_awb_cg = NULL;
 }
 
-void voice_cmu_us_awb_plugin_init()
+void voice_cmu_us_awb_plugin_init(mimic_context *ctx)
 {
-   mimic_voice_list = cons_val(voice_val(register_cmu_us_awb(NULL)), mimic_voice_list);
+   mimic_voice_add(ctx, register_cmu_us_awb(NULL));
 }
 
-void voice_cmu_us_awb_plugin_exit()
+void voice_cmu_us_awb_plugin_exit(mimic_context *ctx)
 {
 }
 
